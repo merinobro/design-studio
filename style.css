@@ -1,0 +1,174 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: .625rem;
+    font: inherit;
+}
+
+/* img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+} */
+
+body {
+    min-height: 100vh;
+    font-family: Maven Pro, sans-serif;
+}
+
+/* HEADER; flexbox code = preliminary;; could use GRID for easier alignment */
+
+header {
+    height: 5vh;
+    padding-top: .6rem;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.logo {
+    grid-area: 1 / 1 / span 1 / span 1;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding-left: .6rem;
+}
+
+.nav-1 {
+    grid-area: 1 / 3 / span 1 / span 1;
+    padding-left: .5rem;
+}
+
+.nav-2 {
+    grid-area: 1 / 4 / span 1 / span 1;
+    padding-left: .5rem;
+}
+
+.nav-3 {
+    grid-area: 1 / 5 / span 1 / span 1;
+    padding-left: .5rem;
+}
+
+.nav-4 {
+    grid-area: 1 / 6 / span 1 / span 1;
+    padding-left: .5rem;
+}
+
+.nav-menu {
+    grid-area: 1 / 7 / span 1 / span 1;
+    font-weight: 600;
+    padding-left: .3rem;
+}
+
+/* MAIN GRID */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 22vh);
+}
+
+.img-stairs {
+    grid-area: 1 / 1 / span 1 / span 1;
+    background-image: url(./assets/item-one.jpeg);
+    background-size: cover;
+    background-position: center;
+    border: .4rem solid white;
+}
+
+.img-leaves {
+    grid-area: 1 / 2 / span 1 / span 1;
+    background-image: url(./assets/item-two.jpeg);
+    background-size: cover;
+    background-position: center;
+    border: .4rem solid white;
+}
+
+.img-play {
+    grid-area: 2 / 3 / span 1 / span 1;
+    background-image: url(./assets/item-six.jpeg);
+    background-size: cover;
+    background-position: center;
+    border: .4rem solid white;
+}
+
+.img-stripes {
+    grid-area: 2 / 5 / span 1 / span 1;
+    background-image: url(./assets/item-five.jpeg);
+    background-size: cover;
+    background-position: center;
+    border: .4rem solid white;
+}
+
+.img-kitchen {
+    grid-area: 3 / 4 / span 1 / span 1;
+    background-image: url(./assets/item-seven.jpeg);
+    background-size: cover;
+    background-position: center;
+    border: .4rem solid white;
+}
+
+.img-orangerail {
+    grid-area: 3 / 6 / span 1 / span 1;
+    background-image: url(./assets/item-four.jpeg);
+    background-size: cover;
+    background-position: center;
+    border: .4rem solid white;
+}
+
+.img-sepia {
+    grid-area: 4 / 7 / span 1 / span 1;
+    background-image: url(./assets/item-three.jpeg);
+    background-size: cover;
+    background-position: center;
+    border: .4rem solid white;
+}
+
+.img-large-left {
+    grid-area: 3 / 1 / span 2 / span 2;
+    background-image: url(./assets/item-eight.jpeg);
+    background-size: cover;
+    background-position: center;
+    border: .4rem solid white;
+}
+
+.img-large-right {
+    grid-area: 1 / 7 / span 2 / span 2;
+    background-image: url(./assets/item-nine.jpeg);
+    background-size: cover;
+    background-position: center;
+    border: .4rem solid white;
+}
+
+.grid-container h1 {
+font-size: 7rem;
+color: #FC471E;
+letter-spacing: 1rem;
+grid-area: 2 / 4 / span 1 / span 2;
+z-index: 5;
+}
+
+/* FOOTER */
+
+footer {
+    height: 5vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    padding-top: .8rem;
+}
+
+.berlin {
+    grid-area: 1 / 1 / span 1 / span 1;
+    font-weight: 700;
+    padding-left: .6rem;
+}
+
+.copy {
+    grid-area: 1 / 6 / span 1 / span 1;
+    font-style: italic;
+    padding-left: .3rem;
+}
